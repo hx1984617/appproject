@@ -1,0 +1,778 @@
+
+/*********************QWidget*********************/
+QWidget#wgtButtonArea{
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    border-image:url(:/Image/Main/buttonBackground.bmp);
+    /*    background-color: rgb(142, 142, 142);*/
+}
+
+QWidget#wgtCilent {
+    background-color: rgb(248,251,252);
+    border:1px solid rgb(187,187,187);
+}
+
+/*********************QFrame**********************/
+QFrame#framedialog {
+    background-color:rgb(220,220,220);
+    border:1px solid rgb(150,150,150);
+    border-radius:10px;
+}
+
+/******************CPushButton********************/
+
+CPushButton {
+    background-color:rgb(208,207,208);
+/*    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #D0D1D0, stop: 0.382 #DDDFDD, stop: 1 #D0D1D0);*/
+    border-color:rgb(110,111,112);
+    border-radius:10px;
+    border-width:2px;
+    border-style:groove;
+    padding:0px;
+    font-size:22px;
+    outline: none;
+}
+
+CPushButton:focus {
+    background-color:rgb(68,128,246);
+    border-color:rgb(40, 77, 202);
+    border-style:groove;
+}
+
+CPushButton:pressed {
+    background-color:rgb(60,121,235);
+    border-color:rgb(40, 77, 202);
+    border-style:ridge;
+}
+
+CPushButton#btnPatientInfo {
+    min-height:200px;
+}
+
+CPushButton#btnClose {
+    border-radius:0px;
+    border-image: url(:/Image/Others/cancel_normal.png);
+}
+
+CPushButton#btnClose:focus {
+    outline:none;
+    border-radius:0px;
+    border-image: url(:/Image/Others/cancel_focus.png);
+}
+
+CPushButton#btnResult
+{
+    background-color: white;
+    border-radius: 0px;
+    border: 0px;
+}
+
+CPushButton#btnResult:focus
+{
+    border-radius: 0px;
+    background-color: rgb(173, 196, 250);
+    border: 0px;
+}
+
+CPushButton#btnResult:pressed
+{
+    border-radius: 0px;
+    background-color: rgb(163, 186, 240);
+    border: 0px;
+}
+
+/******************CSplashScreen********************/
+CSplashScreen{
+    font-size: 20px;
+}
+
+/******************CFuncButton********************/
+
+/******************CScrollItem********************/
+CScrollItem QLabel{
+    border: none;
+    border-radius: 0px;
+    font-size: 24px;
+}
+
+CScrollItem QLabel:disabled{
+    color: black;
+}
+
+CToolButton
+{
+    padding: 1px 1px;
+}
+
+UMenu QWidget#MAIN_WIDGET
+{
+    background:#e7e7e7;
+    border:1px solid gray;
+    padding:2px 4px;
+    border-radius:10px;
+}
+
+
+
+/******************病人信息********************/
+UPatient QLabel {
+    font-size:18pt;
+}
+
+UPatient QLabel#labelIcon {
+    border-image: url(:/Image/Others/patient.png);
+}
+
+UPatient QLabel#labelTitle {
+    font-size:20pt;
+    border:none;
+}
+
+/******************CDialogBox********************/
+CDialogBox
+{
+    border: 1px solid gray;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+CDialogBox QPushButton#btnClose {
+    border-radius: 0px;
+    border-image: url(:/Image/Others/cancel_normal.png);
+}
+
+CDialogBox QPushButton#btnClose:focus {
+    outline: none;
+    border-style: none;
+    border-radius: 0px;
+    border-image: url(:/Image/Others/cancel_focus.png);
+}
+
+CDialogBox QPushButton{
+    color: black;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #e3e2e4, stop: 1 #adacb2);
+    border-style: outset;
+    border-width: 1px;
+    border-color: rgb(103,102,103);
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+CDialogBox QPushButton:focus{
+    color: black;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #81A9E1, stop: 1 #4189E1);
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(20, 65, 212);
+    border-radius: 10px;
+    padding: 0px;
+    outline: none;
+    font-size: 20px;
+}
+
+CDialogBox QPushButton:pressed{
+    color: black;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #81A9E1, stop: 1 #4169E1);
+    border-style: ridge;
+    border-width: 2px;
+    border-color: rgb(20, 65, 212);
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+/****************************键盘******************************/
+/******************CKeyButton********************/
+CDialogBox CKeyButton
+{
+    font-size:20px;
+    border:1px solid rgb(124,124,124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+CDialogBox CKeyButton:pressed
+{
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #dadbde, stop: 1 #f6f7fa);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CDialogBox CKeyButton:focus
+{
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+/******************CKeyHzButton********************/
+CDialogBox CKeyHzButton
+{
+    font-size:20px;
+    border:0px;
+    background-color:rgb(255, 255, 255);
+    outline:0px;
+    border-radius:0px;
+}
+
+CDialogBox CKeyHzButton:focus
+{
+    font-size:20px;
+    border:0px;
+    background-color:rgb(114, 159, 207);
+    outline:0px;
+    border-radius:0px;
+}
+
+/******************CKeyFuncButton********************/
+CDialogBox CKeyFuncButton
+{
+    font-size:20px;
+    border:1px solid rgb(124, 124, 124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+
+CDialogBox CKeyFuncButton:pressed
+{
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CDialogBox CKeyFuncButton:focus
+{
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+    outline:none;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+
+CDialogBox QLabel#title
+{
+    font-size: 25px;
+}
+
+CDialogBox QWidget#ScrollWidget
+{
+    background-color: white;
+}
+
+CEditDialog CPushButton{
+    background: transparent;
+    border-style: none;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+CEditDialog CPushButton:focus{
+    outline: none;
+    background-color: rgb(173, 196, 250);
+    border-radius: 0px;
+    border: 2px solid rgb(173, 196, 250);
+    font-size: 20px;
+}
+
+CEditDialog CPushButton:pressed{
+    outline: none;
+    background-color: rgb(173, 196, 250);
+    border-radius: 0px;
+    border: 2px solid rgb(173, 196, 250);
+    font-size: 20px;
+}
+
+CMultiplePagesDialog CPushButton{
+    background: transparent;
+    border-style: none;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+CMultiplePagesDialog CPushButton:focus{
+    outline: none;
+    background-color: rgb(173, 196, 250);
+    border-radius: 0px;
+    border: 2px solid rgb(173, 196, 250);
+    font-size: 20px;
+}
+
+CMultiplePagesDialog CPushButton:pressed{
+    outline: none;
+    background-color: rgb(173, 196, 250);
+    border-radius: 0px;
+    border: 2px solid rgb(173, 196, 250);
+    font-size: 20px;
+}
+
+CPromptDialog QLabel#promptText
+{
+    font-size: 25px;
+}
+
+CPrintRecordDialog QLabel#subTitleI, #subTitleII, #subTitleIII
+{
+    font-size: 23px;
+}
+
+/******************QProgressBar********************/
+QProgressBar {
+    height:20px;
+    border:1px solid rgb(187,187,187);
+    text-align:center;
+}
+
+QProgressBar::chunk {
+    background-color:green;
+}
+
+
+/******************QScrollBar********************/
+/*QScrollArea {
+    border:1px solid gray;
+    border-radius:0px;
+    background: white;
+}
+
+QScrollBar:vertical {
+    border: 0px solid black;
+    background-color: #EDEDED;
+    max-width: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #D3D3D3, stop: 0.8 #999999, stop: 1 #D3D3D3);
+    border-radius:3px;
+    min-height: 20px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: #EDEDED;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical{
+    height: 10px;
+}*/
+
+/* 蓝色风格*/
+QScrollArea {
+    border:1px solid gray;
+    border-radius:0px;
+    background: white;
+}
+
+QScrollBar:vertical {
+    border: 0px solid black;
+    background-color: #87CEFF;
+    max-width: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #63B8FF, stop: 0.8 #36648B, stop: 1 #63B8FF);
+    border-radius:3px;
+    min-height: 20px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: #87CEFF;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical{
+    height: 10px;
+}
+
+
+QScrollBar:horizontal {
+    border: 0px solid black;
+    background-color: #D3D3D3;
+    max-height: 8px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #D3D3D3, stop: 0.8 #778899, stop: 1 #D3D3D3);
+    border-radius:4px;
+    min-height: 20px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background-color: #D3D3D3;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal{
+    height: 10px;
+}
+
+
+/*******  Data Manage Window *************/
+QTableView {
+    border-width: 1px;
+    border-style: none;
+    selection-color: black;
+    selection-background-color: rgb(180,211,254);
+    gridline-color:rgb(150,150,150);
+}
+
+QSplitter#dataWinTableHead {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(150,150,150);
+}
+
+QSplitter#dataWinTableHead:handle {
+    background-color:rgb(150,150,150);
+}
+
+QSplitter#dataWinTableHead > QPushButton {
+    background-color:rgb(228,230,230);
+    border: 0px;
+    border-radius:0px;
+    border-style:none;
+}
+
+QSplitter#dataWinTableHead > QPushButton:focus {
+    background-color: rgb(180,211,254);
+}
+
+QSplitter#dataWinTableHead > QPushButton:press {
+    background-color:rgb(172,208,250);
+}
+
+QFrame#dataWinButtonArea {
+    background-color:rgb(228,230,230);
+    border-width: 1px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: rgb(150,150,150);
+}
+
+/****************************键盘******************************/
+/******************CKeyButton********************/
+CKeyButton
+{
+    font-size:20px;
+    border:1px solid rgb(124,124,124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+CKeyButton:pressed
+{
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #dadbde, stop: 1 #f6f7fa);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CKeyButton:focus
+{
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+/******************CKeyHzButton********************/
+CKeyHzButton
+{
+    font-size:20px;
+    border:0px;
+    background-color:rgb(255, 255, 255);
+    outline:0px;
+    border-radius:0px;
+}
+
+CKeyHzButton:focus
+{
+    font-size:20px;
+    border:0px;
+    background-color:rgb(114, 159, 207);
+    outline:0px;
+    border-radius:0px;
+}
+
+/******************CKeyFuncButton********************/
+CKeyFuncButton
+{
+    font-size:20px;
+    border:1px solid rgb(124, 124, 124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+
+CKeyFuncButton:pressed
+{
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CKeyFuncButton:focus
+{
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+    outline:none;
+}
+
+CKeyFuncButton#btnFuncLeft
+{
+    image: url(:/Image/KeyBoard/leftMove.png);
+    font-size:20px;
+    border-top:1px solid rgb(124,124,124);
+    border-bottom:1px solid rgb(124,124,124);
+    border-left:1px solid rgb(124,124,124);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+CKeyFuncButton#btnFuncLeft:pressed
+{
+    image: url(:/Image/KeyBoard/leftMove.png);
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border-top:2px solid rgb(22, 116, 244);
+    border-bottom:2px solid rgb(22, 116, 244);
+    border-left:2px solid rgb(22, 116, 244);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+CKeyFuncButton#btnFuncLeft:focus
+{
+    image: url(:/Image/KeyBoard/leftMove.png);
+    border:2px solid rgb(22, 116, 244);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    outline:none;
+}
+
+CKeyFuncButton#btnFuncRight
+{
+    image: url(:/Image/KeyBoard/rightMove.png);
+    font-size:20px;
+    border:1px solid rgb(124,124,124);
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+CKeyFuncButton#btnFuncRight:pressed
+{
+    image: url(:/Image/KeyBoard/rightMove.png);
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border:2px solid rgb(22, 116, 244);
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+
+CKeyFuncButton#btnFuncRight:focus
+{
+    image: url(:/Image/KeyBoard/rightMove.png);
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    outline:none;
+}
+
+CKeyFuncButton#btnFuncEsc
+{
+    image: url(:/Image/KeyBoard/keyBoardExit.png);
+    font-size:20px;
+    border:1px solid rgb(124, 124, 124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+CKeyFuncButton#btnFuncEsc:pressed
+{
+    image: url(:/Image/KeyBoard/keyBoardExit.png);
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CKeyFuncButton#btnFuncEsc:focus
+{
+    image: url(:/Image/KeyBoard/keyBoardExit.png);
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+    outline:none;
+}
+
+CKeyFuncButton#btnFuncDelete
+{
+    image: url(:/Image/KeyBoard/delete.png);
+    font-size:20px;
+    border:1px solid rgb(124, 124, 124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+CKeyFuncButton#btnFuncDelete:pressed
+{
+    image: url(:/Image/KeyBoard/delete.png);
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CKeyFuncButton#btnFuncDelete:focus
+{
+    image: url(:/Image/KeyBoard/delete.png);
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+    outline:none;
+}
+
+CKeyFuncButton#btnHw
+{
+    image: url(:/Image/KeyBoard/handWrite.png);
+    font-size:20px;
+    border:1px solid rgb(124, 124, 124);
+    border-radius:5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c3c2c7, stop: 1 #adacb2);
+}
+CKeyFuncButton#btnHw:pressed
+{
+    image: url(:/Image/KeyBoard/handWrite.png);
+    font-size:20px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #adacb2, stop: 1 #c3c2c7);
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+}
+
+CKeyFuncButton#btnHw:focus
+{
+    image: url(:/Image/KeyBoard/handWrite.png);
+    font-size:20px;
+    border:2px solid rgb(22, 116, 244);
+    border-radius:5px;
+    outline:none;
+}
+
+/******************软键盘********************/
+QWidget#CKeyboard#CDigitalKeyBoard
+{
+    background-color:#d4d8dc;
+    border:1px solid gray;
+}
+/******************数字键盘********************/
+QWidget#CDigitalKeyBoard
+{
+    background-color:#d4d8dc;
+    border:1px solid gray;
+}
+/******************手写键盘********************/
+QWidget#CHwBoard
+{
+    background-color: rgba(86, 86, 86, 100);
+}
+QWidget#hwWidget
+{
+    background-color:#d4d8dc;
+    border:1px solid gray;
+}
+/******************键盘汉字区域********************/
+QWidget#wgtHz#hwBtnWidget
+{
+    background-color:rgb(255, 255, 255);
+}
+
+/****************************波形缩放******************************/
+CWaveScaleDialog#WaveScaleDialog
+{
+    border:1px solid gray;
+    padding:2px 4px;
+    background-color:rgb(211, 215, 207);
+}
+CWaveScaleDialog CPushButton
+{
+    color:black;                      /* 前景色 */
+    background-color:none;            /* 背景色 */
+    border-style:groove;              /* 边框风格 */
+    border-width:0px;                 /* 边框宽度 */
+    border-color:none;                /* 边框颜色 */
+    border-radius:0px;                 /* 边框倒角 */
+    padding:0px;                      /* 内边距 */
+}
+CWaveScaleDialog CPushButton:focus
+{
+    color:black;                      /* 前景色 */
+    background-color:none;            /* 背景色 */
+    border-style:groove;              /* 边框风格 */
+    border-width:2px;                 /* 边框宽度 */
+    border-color:rgb(40, 77, 202);    /* 边框颜色 */
+    border-radius:0px;                /* 边框倒角 */
+    padding:0px;                      /* 内边距 */
+    outline: none;                    /* 去除focus状态的虚线框*/
+}
+CWaveScaleDialog CPushButton:pressed
+{
+    color:black;                      /* 前景色 */
+    background-color:rgb(60,121,235); /* 背景色 */
+    border-style:ridge;               /* 边框风格 */
+    border-width:2px;                 /* 边框宽度 */
+    border-color:rgb(40, 77, 202);    /* 边框颜色 */
+    border-radius:0px;                /* 边框倒角 */
+    padding:0px;                      /* 内边距 */
+}
+/******************CComBox********************/
+CComBox
+{
+    border:1px solid rgb(150,150,150);
+}
+CComBox:focus
+{
+    border:2px solid rgb(22, 116, 244)
+}
+CComBox:disabled
+{
+    background-color:rgba(200, 200, 200, 180);
+}
+
+/******************CCheckBox********************/
+CCheckBox:focus
+{
+    background-color:rgb(173, 196, 250);
+}
+
+/******************CRadioBoxItem********************/
